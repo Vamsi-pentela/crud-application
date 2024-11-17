@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Grid</title>
+  <link rel="stylesheet" href="/stylesheets/user.css">
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">back to home</a>
+    <h1>All Users</h1>
+    <div class="user-grid">
+      <% users.forEach(user => { %>
+        <div class="user-card">
+          <div class="user-image" style="background-image: url('<%= user.imageurl %>');"></div>
+          <div class="user-info">
+            <p class="user-name"><%= user.name %></p>
+            <p class="user-email"><%= user.email %></p>
+          </div>
+          <div class="user-actions">
+            <a href="/edit/<%= user._id %>" class="edit-user">Edit User</a>
+            <a href="/delete/<%= user._id %>" class="delete-user">Delete User</a>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>

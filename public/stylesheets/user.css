@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 50vh;
+    margin-top: 20px;
+    margin-left: 52px;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-link {
+    color: #5099ff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  
+
+}
+
+h1 {
+ 
+    font-size: 2rem;
+   
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.user-card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.user-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.user-email {
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-user, .delete-user {
+    color: #5099ff;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.delete-user {
+    color: #ff5050;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
